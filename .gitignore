@@ -1,0 +1,12 @@
+# Nodde / npm
+node_modules/
+package-lock.json
+
+# SCSS / CSS build
+dist/
+build/
+
+# System / IDE
+.DS.Store
+*.log
+.vscode/
