@@ -5,5 +5,20 @@
   "scripts": {
     "sass": "sass ./scss/main.scss ./css/main.css --no-source-map --style=compressed",
     "sass:watch": "sass --watch ./scss/main.scss ./css/main.css"
-  }
+  },
+  "name": "car-rental-edu-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlterGhost44/car-rental-edu-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlterGhost44/car-rental-edu-website/issues"
+  },
+  "homepage": "https://github.com/AlterGhost44/car-rental-edu-website#readme"
 }

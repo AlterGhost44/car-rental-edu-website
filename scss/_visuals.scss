@@ -1,0 +1,163 @@
+// ========== STYLE ELEMENTÓW STRONY (kolory, tła, cienie, obramowania)
+// Odpowiednik klas z index.html = body, .header .navbar .navbar-style, .nav, .toogle_menu, .logo, .nav_mobile, .nav_desktop, .cta, .article-spacing--md (layout), .footer
+
+body {
+    background: rgb(214, 214, 214);
+}
+
+// ---------- header.header.navbar.navbar-style ----------
+.header,
+.navbar {
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-style {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+// ---------- button.toogle_menu ----------
+.toogle_menu {
+    flex-shrink: 0;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.toogle_menu:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.toogle_menu span {
+    display: block;
+    flex-shrink: 0;
+    background: #111;
+}
+
+// ---------- .nav_mobile (overlay) ----------
+.nav_mobile {
+    background: rgba(17, 17, 17, 0.96);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.nav_mobile .cta {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    padding: 0.875rem 1.25rem;
+    text-align: center;
+    color: #fff;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav_mobile .cta:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+// ---------- .nav_desktop .cta ----------
+.nav_desktop .cta {
+    padding: 0.5rem 0.875rem;
+    color: #111;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav_desktop .cta:hover {
+    color: #1a1a1a;
+    background: rgba(0, 0, 0, 0.06);
+}
+
+// ---------- Hero ----------
+.hero__content {
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.hero__title {
+    margin: 0;
+}
+
+.hero__lead {
+    margin: 0;
+    color: #333;
+    max-width: 52ch;
+}
+
+.hero__cta--primary {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+    padding: 0.75rem 1.5rem;
+}
+
+.hero__cta--primary:hover {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.hero__cta--secondary {
+    background: transparent;
+    color: #111;
+    border-color: #111;
+}
+
+.hero__cta--secondary:hover {
+    background: rgba(0, 0, 0, 0.06);
+    color: #111;
+}
+
+.hero__trust {
+    font-size: 0.9375rem;
+    color: #555;
+}
+
+.hero__trust li {
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+.hero__trust li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    color: #111;
+}
+
+.hero__img {
+    border-radius: 12px;
+    background: #eee;
+}
+
+// ---------- footer.footer ----------
+.footer {
+    background: #636363;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.footer__copy,
+.footer__credit {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #fdfdfd;
+}
+
+.footer__credit {
+    font-size: 0.8125rem;
+    color: #a6a4a4;
+}
+
+.footer__studio {
+    font-weight: 600;
+    color: #dcdada;
+}

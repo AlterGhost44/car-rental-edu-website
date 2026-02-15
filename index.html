@@ -11,15 +11,15 @@
         <script src="/script.js" defer></script>
     </head>
     <body>
-        <header class="navbar">
+        <header class="header navbar navbar-style">
                 <nav class="nav">
+                    <img class="logo" src="/assets/images/logo.avif">
+
                     <button class="toogle_menu" aria-label="Menu">
                         <span></span>
                         <span></span>
                         <span></span>
                     </button>
-
-                    <img class="logo" src="/assets/images/Test.avif">
 
                     <div class="nav_mobile">
                         <a class="cta" href="index.html">Strona główna</a>
@@ -37,8 +37,32 @@
                 </nav>
         </header>
 
-        <section></section>
+        <section class="hero article-spacing--md">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">Wynajem aut w Toruniu – rezerwacja w 15 minut, odbiór od ręki</h1>
+                    <p class="hero__lead">Bez zbędnych formalności i długich umów. Wybierz auto online, potwierdź rezerwację i odbierz je w BNK Car Rental – w centrum Torunia.</p>
+                    <div class="hero__cta-wrap">
+                        <a class="cta hero__cta hero__cta--primary" href="contact.html">Zarezerwuj auto</a>
+                        <a class="cta hero__cta hero__cta--secondary" href="cars.html">Zobacz flotę</a>
+                    </div>
+                    <ul class="hero__trust" aria-label="Zalety">
+                        <li>Rezerwacja online 24/7</li>
+                        <li>Odbiór w 15 min</li>
+                        <li>Ubezpieczenie w cenie</li>
+                    </ul>
+                </div>
+                <div class="hero__media">
+                    <img class="hero__img" src="assets/images/hero.avif" alt="Wynajem aut – BNK Car Rental Toruń" width="1200" height="800" loading="eager">
+                </div>
+            </div>
+        </section>
 
-        <footer></footer>
+        <footer class="footer">
+            <div class="footer__inner">
+                <p class="footer__copy">&copy; BNK Car Rental. Wynajem aut w Toruniu.</p>
+                <p class="footer__credit">Powered by <span class="footer__studio">BNK Studio X</span></p>
+            </div>
+        </footer>
     </body>
 </html>
