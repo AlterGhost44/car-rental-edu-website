@@ -3,17 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="BNK Car Rental, szybki i bezpieczny wynajem aut osobowych w Toruniu. Zarezerwuj w 15min.">
+        <meta name="description" content="Wynajem aut w Toruniu – dostarczamy pod drzwi do 50 km. Zero stresu, pełna przejrzystość. Zarezerwuj w 15 min i jedź.">
         <title>BNK Car rental | Wynajem aut osobowych w Toruniu</title>
+        <meta name="theme-color" content="#111111">
+        <link rel="preload" as="image" href="assets/images/hero.avif">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/home.css">
-        <link rel="icon" type="image/png" href="assets/icon/">
+        <link rel="icon" type="image/x-icon" href="assets/icon/favi-32.ico" sizes="32x32">
+        <link rel="apple-touch-icon" href="assets/icon/apple-touch-icon.png" sizes="180x180">
         <script src="/script.js" defer></script>
     </head>
     <body>
+        <a href="#main" class="skip-link">Przejdź do treści</a>
         <header class="header navbar navbar-style">
-                <nav class="nav">
-                    <img class="logo" src="/assets/images/logo.avif">
+                <nav class="nav" aria-label="Menu główne">
+                    <img class="logo" src="/assets/images/logo.avif" alt="BNK Car Rental – wynajem aut Toruń" width="140" height="48" fetchpriority="high">
 
                     <button class="toogle_menu" aria-label="Menu">
                         <span></span>
@@ -37,26 +41,28 @@
                 </nav>
         </header>
 
+        <main id="main">
         <section class="hero article-spacing--md">
-            <div class="hero__content">
+            <div class="hero__content section-card">
                 <div class="hero__text">
-                    <h1 class="hero__title">Wynajem aut w Toruniu – rezerwacja w 15 minut, odbiór od ręki</h1>
-                    <p class="hero__lead">Bez zbędnych formalności i długich umów. Wybierz auto online, potwierdź rezerwację i odbierz je w BNK Car Rental – w centrum Torunia.</p>
+                    <h1 class="hero__title section__title">Auto pod drzwi w Toruniu i okolicy – wynajmij dziś, jedź od razu</h1>
+                    <p class="hero__lead text-lead">Wiesz dokładnie, co dostajesz: sprawne auta z Torunia, dostawa do 50 km gratis. Bez ukrytych kosztów, bez stresu – jedna cena, zero niespodzianek. Zaufaj nam: rezerwacja w 15 minut, odbiór lub dostawa pod wskazany adres. Decydujesz się raz – my dbamy o resztę.</p>
                     <div class="hero__cta-wrap">
-                        <a class="cta hero__cta hero__cta--primary" href="contact.html">Zarezerwuj auto</a>
-                        <a class="cta hero__cta hero__cta--secondary" href="cars.html">Zobacz flotę</a>
+                        <a class="cta cta--primary" href="contact.html">Chcę auto – rezerwuję teraz</a>
+                        <a class="cta cta--secondary" href="cars.html">Wybierz auto i jedź</a>
                     </div>
-                    <ul class="hero__trust" aria-label="Zalety">
-                        <li>Rezerwacja online 24/7</li>
-                        <li>Odbiór w 15 min</li>
-                        <li>Ubezpieczenie w cenie</li>
+                    <ul class="hero__trust list-check" aria-label="Zalety">
+                        <li>Auta w Toruniu – dostawa do 50 km</li>
+                        <li>Rezerwacja 24/7, odbiór w 15 min</li>
+                        <li>Ubezpieczenie i przejrzysta cena – nic na ostatnią chwilę</li>
                     </ul>
                 </div>
                 <div class="hero__media">
-                    <img class="hero__img" src="assets/images/hero.avif" alt="Wynajem aut – BNK Car Rental Toruń" width="1200" height="800" loading="eager">
+                    <img class="hero__img img-rounded" src="assets/images/hero.avif" alt="Wynajem aut – BNK Car Rental Toruń" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
                 </div>
             </div>
         </section>
+        </main>
 
         <footer class="footer">
             <div class="footer__inner">

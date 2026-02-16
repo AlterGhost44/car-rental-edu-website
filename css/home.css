@@ -1,3 +1,5 @@
+/* Tylko układ (flex, grid, gap, order) – style wizualne w _visuals.scss (uniwersalne klasy). */
+
 .hero__content {
     display: flex;
     flex-direction: column;

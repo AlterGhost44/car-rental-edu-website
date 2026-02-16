@@ -76,57 +76,69 @@ body {
     background: rgba(0, 0, 0, 0.06);
 }
 
-// ---------- Hero ----------
-.hero__content {
+// ---------- Uniwersalne style sekcji (użyj na dowolnej stronie) ----------
+.section-card {
     background: rgb(255, 255, 255);
     border-radius: 15px;
 }
 
-.hero__title {
+.section__title {
     margin: 0;
 }
 
-.hero__lead {
+.text-lead {
     margin: 0;
     color: #333;
     max-width: 52ch;
 }
 
-.hero__cta--primary {
+// ---------- Uniwersalne CTA (primary / secondary) ----------
+.cta--primary {
     background: #111;
     color: #fff;
-    border-color: #111;
+    border: 1px solid #111;
+    border-radius: 8px;
     padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.hero__cta--primary:hover {
+.cta--primary:hover {
     background: #333;
     color: #fff;
     border-color: #333;
 }
 
-.hero__cta--secondary {
+.cta--secondary {
     background: transparent;
     color: #111;
-    border-color: #111;
+    border: 1px solid #111;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.hero__cta--secondary:hover {
+.cta--secondary:hover {
     background: rgba(0, 0, 0, 0.06);
     color: #111;
 }
 
-.hero__trust {
+// ---------- Lista z ptaszkami (dowolna sekcja) ----------
+.list-check {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     font-size: 0.9375rem;
     color: #555;
 }
 
-.hero__trust li {
+.list-check li {
     position: relative;
     padding-left: 1.25rem;
 }
 
-.hero__trust li::before {
+.list-check li::before {
     content: "✓";
     position: absolute;
     left: 0;
@@ -134,7 +146,12 @@ body {
     color: #111;
 }
 
-.hero__img {
+// ---------- Obrazek w sekcji (zaokrąglone rogi) ----------
+.img-rounded {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 12px;
     background: #eee;
 }

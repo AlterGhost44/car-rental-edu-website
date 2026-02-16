@@ -3,17 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="BNK Car Rental, szybki i bezpieczny wynajem aut osobowych w Toruniu. Zarezerwuj w 15min.">
-        <title>BNK Car rental | Wynajem aut osobowych w Toruniu</title>
+        <meta name="description" content="Flota aut w Toruniu – sprawdzone, ubezpieczone, dostawa do 50 km. Jedna cena, zero ukrytych kosztów. Wybierz auto i rezerwuj w 15 min.">
+        <title>Flota aut | BNK Car Rental – Wynajem aut Toruń</title>
+        <meta name="theme-color" content="#111111">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/cars.css">
-        <link rel="icon" type="image/png" href="assets/icon/">
+        <link rel="icon" type="image/png" href="assets/icon/favi-32.ico" sizes="32x32">
+        <link rel="apple-touch-icon" type="image/png" href="assets/icon/apple-touch-icon.png" sizes="180x180">
         <script src="/script.js" defer></script>
     </head>
     <body>
+        <a href="#main" class="skip-link">Przejdź do treści</a>
         <header class="header navbar navbar-style">
-                <nav class="nav">
-                    <img class="logo" src="/assets/images/logo.avif">
+                <nav class="nav" aria-label="Menu główne">
+                    <img class="logo" src="/assets/images/logo.avif" alt="BNK Car Rental – wynajem aut Toruń" width="140" height="48">
 
                     <button class="toogle_menu" aria-label="Menu">
                         <span></span>
@@ -37,10 +40,57 @@
                 </nav>
         </header>
 
-        <section>
-            
-        </section>
+        <main id="main">
+        <section class="cars-section article-spacing--md">
+            <div class="cars-section__header section-card">
+                <h2 class="section__title">Sprawdzone auta z Torunia – wybierz i jedź dziś</h2>
+                <p class="text-lead">Każde auto przeglądane, ubezpieczone i gotowe do odbioru lub dostawy do 50 km. Jedna cena, zero ukrytych kosztów. Kliknij, wybierz – za 15 minut możesz jechać.</p>
+            </div>
+            <div class="cars-section__grid-wrap section-card">
+                <div class="cars-grid">
+                    <a href="car-1.html" class="car-card" aria-label="Wynajmij Toyota Corolla Hybrid">
+                        <img class="img-rounded" src="assets/images/car-1.avif" alt="Toyota Corolla Hybrid" width="1200" height="750" loading="lazy" decoding="async">
+                        <div class="car-card__content">
+                            <h3 class="car-card__title">Toyota Corolla Hybrid Automat</h3>
+                            <p class="car-card__price">349 zł/dzień</p>
+                            <p class="car-card__description">Idealna na dłuższe trasy i miasto. Niski spalanie, pełne wyposażenie. Dostarczamy pod drzwi.</p>
+                            <span class="cta cta--primary">Rezerwuję – Corolla</span>
+                        </div>
+                    </a>
 
+                    <a href="car-2.html" class="car-card" aria-label="Wynajmij Toyota Prius Hybrid">
+                        <img class="img-rounded" src="assets/images/car-2.avif" alt="Toyota Prius Hybrid" width="1200" height="750" loading="lazy" decoding="async">
+                        <div class="car-card__content">
+                            <h3 class="car-card__title">Toyota Prius Hybrid Automat</h3>
+                            <p class="car-card__price">299 zł/dzień</p>
+                            <p class="car-card__description">Ekonomiczny i cichy. Idealny do miasta i na wyjazdy. Zero stresu – wszystko w cenie.</p>
+                            <span class="cta cta--primary">Rezerwuję – Prius</span>
+                        </div>
+                    </a>
+
+                    <a href="car-3.html" class="car-card" aria-label="Wynajmij Toyota Yaris">
+                        <img class="img-rounded" src="assets/images/car-3.avif" alt="Toyota Yaris" width="1200" height="750" loading="lazy" decoding="async">
+                        <div class="car-card__content">
+                            <h3 class="car-card__title">Toyota Yaris</h3>
+                            <p class="car-card__price">199 zł/dzień</p>
+                            <p class="car-card__description">Zwinny, tani w utrzymaniu. Perfekcyjny na co dzień w Toruniu i okolicy.</p>
+                            <span class="cta cta--primary">Rezerwuję – Yaris</span>
+                        </div>
+                    </a>
+
+                    <a href="car-4.html" class="car-card" aria-label="Wynajmij Toyota Aygo">
+                        <img class="img-rounded" src="assets/images/car-4.avif" alt="Toyota Aygo" width="1200" height="750" loading="lazy" decoding="async">
+                        <div class="car-card__content">
+                            <h3 class="car-card__title">Toyota Aygo</h3>
+                            <p class="car-card__price">149 zł/dzień</p>
+                            <p class="car-card__description">Najniższa cena w flocie. Mały, oszczędny – idealny na krótkie wypady i miasto.</p>
+                            <span class="cta cta--primary">Rezerwuję – Aygo</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        </main>
         <footer class="footer">
             <div class="footer__inner">
                 <p class="footer__copy">&copy; BNK Car Rental. Wynajem aut w Toruniu.</p>
