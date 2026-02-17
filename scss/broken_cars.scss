@@ -1,0 +1,16 @@
+@use "form-section";
+
+@include form-section.form-section("broken");
+
+// Dodatki tylko dla broken_car (lista zaufania, wstęp do formularza)
+.broken-section__trust {
+    margin: 0.5rem 0 0;
+    padding: 0;
+}
+
+.broken-section__form-intro {
+    margin: 0 0 1.25rem;
+    font-size: 0.9375rem;
+    color: #555;
+    line-height: 1.5;
+}

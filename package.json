@@ -3,8 +3,8 @@
     "sass": "^1.97.3"
   },
   "scripts": {
-    "sass": "sass ./scss/main.scss ./css/main.css --no-source-map --style=compressed",
-    "sass:watch": "sass --watch ./scss/main.scss ./css/main.css"
+    "sass": "sass ./scss/main.scss ./css/main.css --no-source-map --style=compressed && sass ./scss/contact.scss ./css/contact.css --no-source-map --style=compressed && sass ./scss/broken_cars.scss ./css/broken_cars.css --no-source-map --style=compressed",
+    "sass:watch": "sass --watch ./scss/main.scss:./css/main.css ./scss/contact.scss:./css/contact.css ./scss/broken_cars.scss:./css/broken_cars.css"
   },
   "name": "car-rental-edu-website",
   "version": "1.0.0",

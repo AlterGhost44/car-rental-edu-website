@@ -124,6 +124,29 @@ body {
     color: #111;
 }
 
+
+@keyframes btn-pulse-red {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 0.92;
+    }
+}
+
+.cta--alert {
+    background: #db0000;
+    color: #fff;
+    border: 1px solid #b71c1c;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    animation: btn-pulse-red 1.5s ease-in-out infinite;
+}
+
 // ---------- Lista z ptaszkami (dowolna sekcja) ----------
 .list-check {
     list-style: none;
@@ -162,6 +185,48 @@ body {
     border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
+.footer__brand {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer__tagline {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #e0e0e0;
+    max-width: 40ch;
+}
+
+.footer__nav a {
+    color: #fdfdfd;
+    text-decoration: none;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.footer__nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer__tel {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer__tel a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__tel a:hover {
+    text-decoration: underline;
+}
+
 .footer__copy,
 .footer__credit {
     margin: 0;
@@ -177,4 +242,13 @@ body {
 .footer__studio {
     font-weight: 600;
     color: #dcdada;
+}
+
+@media (min-width: 1024px) {
+    .cta--alert:hover {
+        background: #b71c1c;
+        border-color: #b71c1c;
+        color: #fff;
+        animation-play-state: paused;
+    }
 }
