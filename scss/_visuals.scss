@@ -1,27 +1,22 @@
-// ========== STYLE ELEMENTÓW STRONY (kolory, tła, cienie, obramowania)
-// Odpowiednik klas z index.html = body, .header .navbar .navbar-style, .nav, .toogle_menu, .logo, .nav_mobile, .nav_desktop, .cta, .article-spacing--md (layout), .footer
+// ========== STYLE ELEMENTÓW (tokens + nowoczesny UX) ==========
 
-body {
-    background: rgb(214, 214, 214);
-}
-
-// ---------- header.header.navbar.navbar-style ----------
+// ---------- header / navbar (mocniejsza obecność) ----------
 .header,
 .navbar {
-    background: #fff;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+    transition: box-shadow var(--ease);
 }
 
 .navbar-style {
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--color-border);
 }
 
-// ---------- button.toogle_menu ----------
 .toogle_menu {
     flex-shrink: 0;
-    border-radius: 8px;
-    transition: background-color 0.2s ease;
+    border-radius: var(--radius-sm);
+    transition: background-color var(--ease);
 }
 
 .toogle_menu:hover {
@@ -31,14 +26,14 @@ body {
 .toogle_menu span {
     display: block;
     flex-shrink: 0;
-    background: #111;
+    background: var(--color-primary);
 }
 
-// ---------- .nav_mobile (overlay) ----------
+// ---------- nav mobile (overlay) ----------
 .nav_mobile {
-    background: rgba(17, 17, 17, 0.96);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: rgba(15, 15, 15, 0.97);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .nav_mobile .cta {
@@ -50,78 +45,94 @@ body {
     color: #fff;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     text-decoration: none;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+    transition: background-color var(--ease), border-color var(--ease);
 }
 
 .nav_mobile .cta:hover {
     background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.35);
+    border-color: rgba(255, 255, 255, 0.4);
 }
 
-// ---------- .nav_desktop .cta ----------
 .nav_desktop .cta {
-    padding: 0.5rem 0.875rem;
-    color: #111;
+    padding: 0.5rem 1rem;
+    color: var(--color-primary);
     background: transparent;
     border: none;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     text-decoration: none;
-    transition: color 0.2s ease, background-color 0.2s ease;
+    transition: color var(--ease), background-color var(--ease);
 }
 
 .nav_desktop .cta:hover {
-    color: #1a1a1a;
+    color: var(--color-primary-hover);
     background: rgba(0, 0, 0, 0.06);
 }
 
-// ---------- Uniwersalne style sekcji (użyj na dowolnej stronie) ----------
+// ---------- Sekcje (karty) – mocniejszy cień i obramowanie ----------
 .section-card {
-    background: rgb(255, 255, 255);
-    border-radius: 15px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: box-shadow var(--ease);
 }
 
 .section__title {
     margin: 0;
+    font-weight: 700;
 }
 
 .text-lead {
     margin: 0;
-    color: #333;
+    color: var(--color-text-muted);
     max-width: 52ch;
+    font-weight: 500;
 }
 
-// ---------- Uniwersalne CTA (primary / secondary) ----------
+// ---------- CTA primary / secondary (mocniejszy akcent) ----------
 .cta--primary {
-    background: #111;
+    background: var(--color-primary);
     color: #fff;
-    border: 1px solid #111;
-    border-radius: 8px;
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-md);
     padding: 0.75rem 1.5rem;
+    font-weight: 600;
     text-decoration: none;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+    transition: background-color var(--ease), border-color var(--ease), transform var(--ease);
 }
 
 .cta--primary:hover {
-    background: #333;
+    background: var(--color-primary-hover);
     color: #fff;
-    border-color: #333;
+    border-color: var(--color-primary-hover);
+}
+
+.cta--primary:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
 }
 
 .cta--secondary {
     background: transparent;
-    color: #111;
-    border: 1px solid #111;
-    border-radius: 8px;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-md);
     padding: 0.75rem 1.5rem;
+    font-weight: 600;
     text-decoration: none;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color var(--ease), color var(--ease), border-color var(--ease);
 }
 
 .cta--secondary:hover {
     background: rgba(0, 0, 0, 0.06);
-    color: #111;
+    color: var(--color-primary);
+}
+
+.cta--secondary:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
 }
 
 
@@ -137,23 +148,28 @@ body {
 }
 
 .cta--alert {
-    background: #db0000;
+    background: #c62828;
     color: #fff;
     border: 1px solid #b71c1c;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     font-weight: 600;
     animation: btn-pulse-red 1.5s ease-in-out infinite;
 }
 
-// ---------- Lista z ptaszkami (dowolna sekcja) ----------
+.cta--alert:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+// ---------- Lista z ptaszkami ----------
 .list-check {
     list-style: none;
     margin: 0;
     padding: 0;
     font-size: 0.9375rem;
-    color: #555;
+    color: var(--color-text-muted);
 }
 
 .list-check li {
@@ -166,23 +182,23 @@ body {
     position: absolute;
     left: 0;
     font-weight: 700;
-    color: #111;
+    color: var(--color-primary);
 }
 
-// ---------- Obrazek w sekcji (zaokrąglone rogi) ----------
+// ---------- Obrazek w sekcji ----------
 .img-rounded {
     display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background: #eee;
 }
 
-// ---------- footer.footer ----------
+// ---------- Footer (mocniejszy blok) ----------
 .footer {
-    background: #636363;
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    background: #3d3d3d;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .footer__brand {
